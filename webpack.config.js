@@ -18,6 +18,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      title: 'Dino Ipsum Hangman',
       template: './src/index.html',
       inject: 'body'
     }),
