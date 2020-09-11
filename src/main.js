@@ -42,9 +42,9 @@ $(document).ready(function () {
         $(".error").html("<p>Please only enter one letter.</p>");
       } else if (!checkArray.includes(inputString)) {
         $("#letter").val("");
-        console.log(dinoIpsumGenerator);
+        //console.log(dinoIpsumGenerator);
         dinoIpsumGenerator.decrementCounter();
-        console.log(dinoIpsumGenerator);
+        //console.log(dinoIpsumGenerator);
         if (dinoIpsumGenerator.counter === 0) {
           alert("YOU LOSE");
           location.reload();
@@ -59,7 +59,7 @@ $(document).ready(function () {
         }
         $(".error").hide();
         $(".showName").text(splitResponse.join(" "));
-        console.log(checkArray);
+        //console.log(checkArray);
       } else {
         $(".error").hide();
       }
